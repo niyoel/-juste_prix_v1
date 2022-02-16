@@ -15,7 +15,7 @@ while True:
     elif prixDevine > justPrix:
         print("c'est plus")
     else: 
-        print(f"felicitation vous avez gagne le prix d'un obje est {justPrix}")
+        print(f"felicitation vous avez gagne le prix d'un objet est {justPrix}")
 
 from random import randint
 
