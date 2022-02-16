@@ -8,7 +8,7 @@ print("| bienvenue sur notre plateau |")
 print(" ----------------------------")
 print("")
 while True:
-    prixDevine=int(input("devine la prix d'un objet entre 1 et 100: "))
+    prixDevine=int(input("devine le prix d'un objet entre 1 et 100: "))
     if prixDevine < justPrix:
         print("C’est moins")
     elif prixDevine > justPrix:
