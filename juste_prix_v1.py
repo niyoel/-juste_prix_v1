@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from random import randint
 
 
@@ -16,7 +16,7 @@ while True:
         print("c'est plus")
     else: 
         print(f"felicitation vous avez gagne le prix d'un obje est {justPrix}")
-=======
+
 from random import randint
 
 
