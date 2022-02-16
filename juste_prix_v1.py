@@ -4,17 +4,15 @@ from random import randint
 justPrix=randint(1,100)
 print(justPrix)
 print(" ----------------------------")
-print("| bienvenue sur notre plateu |")
+print("| bienvenue sur notre plateau |")
 print(" ----------------------------")
 print("")
 while True:
-    prixDevine=int(input("devine la prix d'un objet: "))
-    if type(prixDevine)!=int:
-        print(" un nombre svp")
-    elif prixDevine < justPrix:
+    prixDevine=int(input("devine la prix d'un objet entre 1 et 100: "))
+    if prixDevine < justPrix:
         print("C’est moins")
     elif prixDevine > justPrix:
         print("c'est plus")
     else: 
-        print(f"felicitation vous avez gagne! le prix d'un obje est {justPrix}")
+        print(f"felicitation vous avez gagne le prix d'un obje est {justPrix}")
         exit()
