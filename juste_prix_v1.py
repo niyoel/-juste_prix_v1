@@ -11,9 +11,9 @@ print("")
 while True:
     prixDevine=int(input("devine le prix d'un objet entre 1 et 100: "))
     if prixDevine < justPrix:
-        print("C’est moins")
+        print("votre prix est inferieur que le juste prix")
     elif prixDevine > justPrix:
-        print("c'est plus")
+        print("votre prix est superieur que l juste prix")
     else: 
         print(f"felicitation vous avez gagne le prix d'un objet est {justPrix}")
         exit()
