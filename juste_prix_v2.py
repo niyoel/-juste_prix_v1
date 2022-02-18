@@ -4,7 +4,6 @@ print(justPrix)
 print(" ----------------------------")
 print("| bienvenue sur notre plateau |")
 print(" ----------------------------")
-print("")
 i=1
 j=9
 while i<=10:
