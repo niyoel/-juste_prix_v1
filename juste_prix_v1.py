@@ -9,13 +9,13 @@ print("| bienvenue sur notre plateau |")
 print(" ----------------------------")
 print("")
 while True:
-    prixDevine=int(input("devine le prix d'un objet entre 1 et 100: "))
-    if prixDevine < justPrix:
-        print("votre prix est inferieur que le juste prix")
-    elif prixDevine > justPrix:
-        print("votre prix est superieur que l juste prix")
+    prix_devine=int(input("devine le prix d'un objet entre 1 et 100: "))
+    if prix_devine < justPrix:
+        print("c'est plus")
+    elif prix_devine > justPrix:
+        print("c'est moins ")
     else: 
-        print(f"felicitation vous avez gagne le prix d'un objet est {justPrix}")
+        print(f"Félicitation vous avez gagne le prix d'un objet  {justPrix}")
         exit()
 from random import randint
 
