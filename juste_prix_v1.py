@@ -16,7 +16,7 @@ while True:
         print("c'est plus")
     else: 
         print(f"felicitation vous avez gagne le prix d'un objet est {justPrix}")
-
+        exit()
 from random import randint
 
 
