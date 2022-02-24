@@ -4,7 +4,7 @@ print("| bienvenue sur notre plateau |")
 print(" ----------------------------")
 print("")
 print("Choisissez un mode de difficulté parmis les modes suivants:","F pour le mode facile","N pour le mode normale","P pour le mode personnalisé",sep="\n")
-mode=input(str("-"))
+mode=str(input("-"))
 if mode=="F":
     juste_prix=randint(1,100)
     # print(juste_prix)
@@ -38,9 +38,9 @@ if mode=="N":
             
 if mode=="P":
    print ("Entrez mx pour choisir le prix maximale que tu peux devine","nbr pour le nombre d'essais que tu veux", sep="\n")
-   choix=input(str("-"))
+   choix=str(input("-"))
    if choix=="mx":
-        max= int(input("Choisissez la limite de prix"))
+        max= int(input("Choisissez la limite de prix: "))
         juste_prix=randint(1,max)
         while True:
             prix_devine=int(input(f"Devinez le prix d'un objet entre 1 et {max}: "))
