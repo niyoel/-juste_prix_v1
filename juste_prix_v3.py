@@ -53,10 +53,22 @@ if mode=="P":
                 exit()
    if choix=="nbr":
         nombre=int(input("Choisissez le nombre d'essais: "))
-        juste_prix=randint(1,100)
-        loop_count=1
-        essais_count=nombre-1
-        while loop_count<= nombre:
+        if nombre==0:
+            juste_prix=randint(1,100)
+            while True:
+                prix_devine=int(input("Devinez le prix d'un objet entre 1 et 100: "))
+                if prix_devine < juste_prix:
+                    print("C'est plus")
+                elif prix_devine > juste_prix:
+                    print("C'est moins ")
+                else: 
+                    print(f"Félicitation vous avez gagne! Le prix d'un objet  {juste_prix}")
+                    exit()
+        else:
+            juste_prix=randint(1,100)
+            loop_count=nombre
+            essais_count=nombre-1
+            while loop_count<=nombre:
                 prix_devine=int(input(f"Devinez le prix d'un objet entre 1 et 100. Attention! Vous avez {essais_count+1} seulement: "))
                 if prix_devine < juste_prix:
                     print("C'est plus")
@@ -67,7 +79,8 @@ if mode=="P":
                     loop_count=loop_count+1
                     essais_count=essais_count-1
                 else:
-                    print(f"Félicitations vous avez gagne  à la {loop_count}éme essais! Le juste prix est: {juste_prix}")
+                    print(f"Félicitations vous avez gagne  à la {loop_count}éme essais  le juste prix est: {juste_prix}")
                     exit()
-        print(f"La partie est terminée. Vous avez echoué! Le prix est:{juste_prix} ")
-                    
+            print(f"La partie est terminée. Vous avez echoué! Le prix est:{juste_prix} ")
+
+            
