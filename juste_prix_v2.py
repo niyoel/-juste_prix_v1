@@ -21,7 +21,6 @@ while loop_count<=10:
         else:
             print(f"Félicitations vous avez gagne  à la {loop_count}éme essais  le juste prix est: {juste_prix}")
             exit()
-    
 print(f"La partie est terminée. Vous avez echoué! Le prix est:{juste_prix} ")
             
  
