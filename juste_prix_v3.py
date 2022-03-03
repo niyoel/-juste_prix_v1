@@ -69,7 +69,7 @@ if mode=="P":
             loop_count=1
             essais_count=nombre-1
             while loop_count<= nombre:
-                    prix_devine=int(input(f"Devinez le prix d'un objet entre 1 et 100. Attention! Vous avez {essais_count+1} seulement: "))
+                    prix_devine=int(input(f"Devinez le prix d'un objet entre 1 et 100. Attention! Vous avez {essais_count+1} essais seulement: "))
                     if prix_devine < juste_prix:
                         print("C'est plus")
                         loop_count=loop_count+1
