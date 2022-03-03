@@ -49,7 +49,7 @@ if mode=="P":
             elif prix_devine > juste_prix:
                 print("c'est moins ")
             else: 
-                print(f"Félicitation vous avez gagne le prix d'un objet  {juste_prix}")
+                print(f"Félicitation vous avez gagne le prix d'un objet est {juste_prix}")
                 exit()
    if choix=="nbr":
         nombre=int(input("Choisissez le nombre d'essais que vous voulais: "))
