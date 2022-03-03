@@ -15,7 +15,7 @@ if mode=="F":
         elif prix_devine > juste_prix:
             print("C'est moins ")
         else: 
-            print(f"Félicitation vous avez gagne! Le prix d'un objet  {juste_prix}")
+            print(f"Félicitation vous avez gagne! Le prix d'un objet est {juste_prix}")
             exit()
 if mode=="N":
     juste_prix=randint(1,100)
@@ -37,7 +37,7 @@ if mode=="N":
     print(f"La partie est terminée. Vous avez echoué! Le prix est:{juste_prix} ")
             
 if mode=="P":
-   print ("Entrez mx pour choisir le prix maximale que tu peux devine","nbr pour le nombre d'essais que tu veux", sep="\n")
+   print ("Entrez mx pour choisir le prix maximale que vous pouvez devinez","nbr pour le nombre d'essais que vous voulais", sep="\n")
    choix=str(input("-"))
    if choix=="mx":
         max= int(input("Choisissez le prix maximal d'un objet: "))
@@ -62,7 +62,7 @@ if mode=="P":
                 elif prix_devine > juste_prix:
                     print("C'est moins ")
                 else: 
-                    print(f"Félicitation vous avez gagne! Le prix d'un objet  {juste_prix}")
+                    print(f"Félicitation vous avez gagne! Le prix d'un objet est {juste_prix}")
                     exit()
         else:
             juste_prix=randint(1,100)
