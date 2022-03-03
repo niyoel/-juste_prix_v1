@@ -32,7 +32,7 @@ if mode=="N":
              loop_count=loop_count+1
              essais_count=essais_count-1
         else:
-            print(f"Félicitations vous avez gagne  à la {loop_count}éme essais  le juste prix est: {juste_prix}")
+            print(f"Félicitations vous avez gagne  à la {loop_count}éme essais! Le juste prix est: {juste_prix}")
             exit()
     print(f"La partie est terminée. Vous avez echoué! Le prix est:{juste_prix} ")
             
@@ -49,7 +49,7 @@ if mode=="P":
             elif prix_devine > juste_prix:
                 print("c'est moins ")
             else: 
-                print(f"Félicitation vous avez gagne le prix d'un objet est {juste_prix}")
+                print(f"Félicitation vous avez gagne! Le prix d'un objet est {juste_prix}")
                 exit()
    if choix=="nbr":
         nombre=int(input("Choisissez le nombre d'essais que vous voulais: "))
